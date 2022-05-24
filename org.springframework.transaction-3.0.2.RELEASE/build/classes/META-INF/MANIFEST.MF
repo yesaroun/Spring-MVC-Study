@@ -1,0 +1,111 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.1
+Created-By: 14.3-b01-101 (Apple Inc.)
+Export-Package: org.springframework.dao;version="3.0.2.RELEASE";uses:=
+ "org.springframework.core",org.springframework.dao.annotation;version
+ ="3.0.2.RELEASE";uses:="org.aopalliance.aop,org.springframework.aop,o
+ rg.springframework.aop.framework,org.springframework.aop.support,org.
+ springframework.beans,org.springframework.beans.factory,org.springfra
+ mework.beans.factory.config,org.springframework.core,org.springframew
+ ork.dao.support",org.springframework.dao.support;version="3.0.2.RELEA
+ SE";uses:="org.aopalliance.intercept,org.springframework.beans,org.sp
+ ringframework.beans.factory,org.springframework.dao",org.springframew
+ ork.jca.cci;version="3.0.2.RELEASE";uses:="javax.resource,org.springf
+ ramework.dao",org.springframework.jca.cci.connection;version="3.0.2.R
+ ELEASE";uses:="javax.naming,javax.resource,javax.resource.cci,org.spr
+ ingframework.beans.factory,org.springframework.jca.cci,org.springfram
+ ework.transaction,org.springframework.transaction.support",org.spring
+ framework.jca.cci.core;version="3.0.2.RELEASE";uses:="javax.resource,
+ javax.resource.cci,org.springframework.dao",org.springframework.jca.c
+ ci.core.support;version="3.0.2.RELEASE";uses:="javax.resource.cci,org
+ .springframework.dao.support,org.springframework.jca.cci,org.springfr
+ amework.jca.cci.core",org.springframework.jca.cci.object;version="3.0
+ .2.RELEASE";uses:="javax.resource,javax.resource.cci,org.springframew
+ ork.beans.factory,org.springframework.dao,org.springframework.jca.cci
+ .core",org.springframework.jca.context;version="3.0.2.RELEASE";uses:=
+ "javax.resource,javax.resource.spi,javax.resource.spi.endpoint,javax.
+ resource.spi.work,javax.transaction.xa,org.springframework.beans,org.
+ springframework.beans.factory,org.springframework.beans.factory.confi
+ g,org.springframework.beans.factory.support,org.springframework.conte
+ xt,org.springframework.context.support",org.springframework.jca.endpo
+ int;version="3.0.2.RELEASE";uses:="javax.resource,javax.resource.spi,
+ javax.resource.spi.endpoint,javax.transaction.xa,org.aopalliance.inte
+ rcept,org.springframework.beans.factory,org.springframework.context,o
+ rg.springframework.transaction.jta",org.springframework.jca.support;v
+ ersion="3.0.2.RELEASE";uses:="javax.resource,javax.resource.spi,javax
+ .resource.spi.work,org.springframework.beans.factory",org.springframe
+ work.jca.work;version="3.0.2.RELEASE";uses:="javax.naming,javax.resou
+ rce.spi,javax.resource.spi.work,org.springframework.beans.factory,org
+ .springframework.core.task,org.springframework.jca.context,org.spring
+ framework.jndi,org.springframework.scheduling",org.springframework.jc
+ a.work.glassfish;version="3.0.2.RELEASE";uses:="javax.resource.spi.wo
+ rk,org.springframework.jca.work",org.springframework.jca.work.jboss;v
+ ersion="3.0.2.RELEASE";uses:="javax.resource.spi.work,org.springframe
+ work.jca.work",org.springframework.transaction;version="3.0.2.RELEASE
+ ";uses:="org.springframework.core",org.springframework.transaction.an
+ notation;version="3.0.2.RELEASE";uses:="javax.ejb,org.springframework
+ .transaction.interceptor",org.springframework.transaction.config;vers
+ ion="3.0.2.RELEASE";uses:="org.springframework.beans.factory.config,o
+ rg.springframework.beans.factory.support,org.springframework.beans.fa
+ ctory.xml,org.w3c.dom",org.springframework.transaction.interceptor;ve
+ rsion="3.0.2.RELEASE";uses:="org.aopalliance.aop,org.aopalliance.inte
+ rcept,org.springframework.aop,org.springframework.aop.framework,org.s
+ pringframework.aop.support,org.springframework.beans.factory,org.spri
+ ngframework.beans.factory.config,org.springframework.transaction,org.
+ springframework.transaction.support",org.springframework.transaction.
+ jta;version="3.0.2.RELEASE";uses:="com.ibm.wsspi.uow,javax.transactio
+ n,javax.transaction.xa,org.apache.commons.logging,org.springframework
+ .beans.factory,org.springframework.jndi,org.springframework.transacti
+ on,org.springframework.transaction.support",org.springframework.trans
+ action.support;version="3.0.2.RELEASE";uses:="org.springframework.bea
+ ns.factory,org.springframework.core,org.springframework.transaction"
+Bundle-Vendor: SpringSource
+Bundle-Version: 3.0.2.RELEASE
+Tool: Bundlor 1.0.0.RELEASE
+Bundle-Name: Spring Transaction
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.springframework.transaction
+Import-Package: com.ibm.ws.Transaction;version="0";resolution:="option
+ al",com.ibm.wsspi.uow;version="[6.0.2.17, 6.1.0)";resolution:="option
+ al",javax.ejb;version="[3.0.0, 4.0.0)";resolution:="optional",javax.m
+ anagement;version="0";resolution:="optional",javax.naming;version="0"
+ ;resolution:="optional",javax.resource;version="[1.5.0, 2.0.0)";resol
+ ution:="optional",javax.resource.cci;version="[1.5.0, 2.0.0)";resolut
+ ion:="optional",javax.resource.spi;version="[1.5.0, 2.0.0)";resolutio
+ n:="optional",javax.resource.spi.endpoint;version="[1.5.0, 2.0.0)";re
+ solution:="optional",javax.resource.spi.work;version="[1.5.0, 2.0.0)"
+ ;resolution:="optional",javax.transaction;version="[1.0.1, 2.0.0)";re
+ solution:="optional",javax.transaction.xa;version="[1.0.1, 2.0.0)";re
+ solution:="optional",oracle.j2ee.transaction;version="0";resolution:=
+ "optional",org.aopalliance.aop;version="[1.0.0, 2.0.0)";resolution:="
+ optional",org.aopalliance.intercept;version="[1.0.0, 2.0.0)";resoluti
+ on:="optional",org.apache.commons.logging;version="[1.1.1, 2.0.0)",or
+ g.springframework.aop;version="[3.0.2,3.0.3)";resolution:="optional",
+ org.springframework.aop.config;version="[3.0.2,3.0.3)";resolution:="o
+ ptional",org.springframework.aop.framework;version="[3.0.2,3.0.3)";re
+ solution:="optional",org.springframework.aop.scope;version="[3.0.2,3.
+ 0.3)";resolution:="optional",org.springframework.aop.support;version=
+ "[3.0.2,3.0.3)";resolution:="optional",org.springframework.aop.suppor
+ t.annotation;version="[3.0.2,3.0.3)";resolution:="optional",org.sprin
+ gframework.beans;version="[3.0.2,3.0.3)",org.springframework.beans.fa
+ ctory;version="[3.0.2,3.0.3)",org.springframework.beans.factory.annot
+ ation;version="[3.0.2,3.0.3)",org.springframework.beans.factory.confi
+ g;version="[3.0.2,3.0.3)",org.springframework.beans.factory.parsing;v
+ ersion="[3.0.2,3.0.3)",org.springframework.beans.factory.support;vers
+ ion="[3.0.2,3.0.3)",org.springframework.beans.factory.xml;version="[3
+ .0.2,3.0.3)",org.springframework.beans.propertyeditors;version="[3.0.
+ 2,3.0.3)",org.springframework.context;version="[3.0.2,3.0.3)";resolut
+ ion:="optional",org.springframework.context.support;version="[3.0.2,3
+ .0.3)";resolution:="optional",org.springframework.core;version="[3.0.
+ 2,3.0.3)",org.springframework.core.task;version="[3.0.2,3.0.3)",org.s
+ pringframework.jndi;version="[3.0.2,3.0.3)";resolution:="optional",or
+ g.springframework.scheduling;version="[3.0.2,3.0.3)";resolution:="opt
+ ional",org.springframework.stereotype;version="[3.0.2,3.0.3)";resolut
+ ion:="optional",org.springframework.util;version="[3.0.2,3.0.3)",org.
+ springframework.util.xml;version="[3.0.2,3.0.3)",org.w3c.dom;version=
+ "0";resolution:="optional",weblogic.transaction;version="0";resolutio
+ n:="optional"
+Bundle-Creator: arjen
+Implementation-Title: org.springframework.transaction
+Implementation-Version: 3.0.2.RELEASE
+

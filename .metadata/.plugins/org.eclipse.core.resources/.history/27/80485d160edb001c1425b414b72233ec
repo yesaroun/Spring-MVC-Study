@@ -1,0 +1,39 @@
+/*================================================
+	MemberDAO.java
+	- 데이터베이스 액션 처리 클래스
+	- Connection 객체에 대한 의존성 주입
+	
+================================================*/
+
+package com.test.mvc;
+
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class MmemberDAO implements IMemberDAO
+{
+	@Override
+	public int add(MemberDTO member) throws SQLException
+	{
+		int result = 0;
+		
+		return result;
+	}
+	
+	@Override
+	public int count() throws SQLException
+	{
+		int result = 0;
+		
+		return result;
+	}
+
+	@Override
+	public ArrayList<MemberDTO> list() throws SQLException
+	{
+		ArrayList<MemberDTO> result = new ArrayList<>();
+		
+		return result;
+	}
+
+}

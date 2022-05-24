@@ -1,0 +1,8 @@
+package com.test.mvc;
+
+public interface IMemberDAO
+{
+	public int count();
+	
+	public int add(MemberDTO dto);
+}

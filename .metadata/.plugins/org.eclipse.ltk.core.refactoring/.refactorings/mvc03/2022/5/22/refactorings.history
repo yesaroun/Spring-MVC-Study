@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.test.mvc.MmemberDAO&apos; to &apos;MemberDAO&apos;&#x0D;&#x0A;- Original project: &apos;mvc03&apos;&#x0D;&#x0A;- Original element: &apos;com.test.mvc.MmemberDAO&apos;&#x0D;&#x0A;- Renamed element: &apos;com.test.mvc.MemberDAO&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MmemberDAO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.test.mvc{MmemberDAO.java[MmemberDAO" matchStrategy="1" name="MemberDAO" qualified="false" references="true" similarDeclarations="false" stamp="1653363992438" textual="false" version="1.0"/>
+</session>
