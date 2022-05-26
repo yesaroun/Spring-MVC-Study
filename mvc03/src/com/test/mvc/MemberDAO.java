@@ -1,3 +1,4 @@
+
 /*================================================
 	MemberDAO.java
 	- 데이터베이스 액션 처리 클래스
@@ -34,9 +35,9 @@ public class MemberDAO implements IMemberDAO
 		int result = 0;
 		
 		Connection conn = dataSource.getConnection();
-	
-		String sql = "INSERT INTO TBL_MEMBERLIST(MID, NAME, TELEPHONE)"
-				+ " VALUES(MEMBERLISTSEQ.NEXTVAL, ?, ?)";
+		
+		String sql = "INSERT INTO TBL_MEMBERLIST(MID, NAME, TELEPHONE)" 
+					+ " VALUES(MEMBERLISTSEQ.NEXTVAL, ?, ?)";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		pstmt.setString(1, member.getName());
 		pstmt.setString(2, member.getTelephone());
@@ -67,7 +68,6 @@ public class MemberDAO implements IMemberDAO
 		pstmt.close();
 		conn.close();
 		
-		
 		return result;
 	}
 
@@ -96,5 +96,4 @@ public class MemberDAO implements IMemberDAO
 		
 		return result;
 	}
-
 }

@@ -21,7 +21,6 @@ public class MemberListController implements Controller
 	// 인터페이스 자료형을 취하는 속성 구성
 	private IMemberDAO dao;
 	
-	// setter 메소드 구성
 	public void setDao(IMemberDAO dao)
 	{
 		this.dao = dao;
@@ -30,7 +29,7 @@ public class MemberListController implements Controller
 	@Override
 	public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception
 	{
-		// 액션 코드
+		// 액션코드
 		ModelAndView mav = new ModelAndView();
 		
 		int count = 0;
@@ -52,5 +51,5 @@ public class MemberListController implements Controller
 		
 		return mav;
 	}
-	
+
 }

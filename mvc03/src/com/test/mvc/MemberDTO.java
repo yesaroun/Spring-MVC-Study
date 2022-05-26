@@ -36,6 +36,6 @@ public class MemberDTO
 	{
 		this.telephone = telephone;
 	}
-	
+
 	
 }

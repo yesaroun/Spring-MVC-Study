@@ -8,16 +8,25 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>MemberList.jsp</title>
+<title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <style type="text/css">
 	*{line-height: 150%;}
 	#customers td {text-align: center;}
+	#submitBtn
+	{
+		height: 150%;
+		width: 250px;
+		font-size: 18px;
+		font-family: 맑은 고딕;
+		color: #343;
+	}
 	#submitBtn:active 
 	{
 		height: 150%;
 		width: 250px;
 		font-size: 18px;
+		font-weight: bold;
 		font-family: 맑은 고딕;
 		color: #343;
 	}
@@ -28,6 +37,30 @@
 		display: none;
 	}
 </style>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function()
+	{
+		$("#submitBtn").click(function()
+		{
+			// 테스트
+			//alert("aa");
+			
+			// 두 항목 모두 필수 입력 항목이기 때문에... 생략 가능
+			$("#err").css("display", "none");
+			
+			if ($("#name").val()=="" || $("#telephone").val()=="")
+			{
+				$("#err").css("display", "inline");
+				return;
+			}
+			
+			$("#memberForm").submit();
+		});
+	});
+
+</script>
 </head>
 <body>
 
@@ -37,7 +70,7 @@
 </div>
 
 <div>
-	<form action="" method="post">
+	<form action="memberinsert.do" method="post" id="memberForm">
 		이름 <input type="text" name="name" id="name" class="control" required="required">
 		<br>
 		전화 <input type="text" name="telephone" id="telephone" class="control" required="required" />
