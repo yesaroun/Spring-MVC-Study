@@ -23,7 +23,7 @@ public class EmployeeDAO implements IEmployeeDAO
 	private DataSource datasource;
 	
 	// setter 메소드 정의(구성)
-	public void setDatasource(DataSource datasource)
+	public void setDataSource(DataSource datasource)
 	{
 		this.datasource = datasource;
 	}

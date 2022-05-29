@@ -318,6 +318,22 @@ http://localhost:8090/mvc03/memberlist.do
    - EmployeeList.jsp		→ 직원 리스트 출력 페이지.
    - main.css			→ 메인 스타일 구성.
 
+   - EmployeeListController.java
+     (employeelist.action)
+
+   - web.xml		   	→ DispatchrServlet 객체 등록
+			           URL 매핑 주소 등록
+
+   - dispatcher-servlet.xml	→ 컨트롤러 객체 등록 	
+			       	   URL 매핑 주소 등록
+			       	   SimpleDriverDataSource 객체 등록
+			       	   의존 객체 주입 설정
+			       	   DAO 객체 등록
+
+
+
+
+
    - EmployeeInsertForm.jsp	→ 직원데이터 입력 폼 페이지.
 				   AJAX, jQuery 기능 포함.
    - EmployeeUpdateForm.jsp	→ 직원데이터 수정 폼 페이지.
@@ -356,7 +372,7 @@ http://localhost:8090/mvc03/memberlist.do
 
    - ...중략...
 
-   - EmployeeListController.java
+   - EmployeeListController.java   - 앞에서 했음
      (employeelist.action)
 
    - EmployeeInsertForm.java
@@ -408,13 +424,13 @@ http://localhost:8090/mvc03/memberlist.do
 	
    - ...중략...
 
-   - dispatcher-servlet.xml	→ 컨트롤러 객체 등록 	
+   - dispatcher-servlet.xml	→ 컨트롤러 객체 등록 	- 앞에서 했음
 			       	   URL 매핑 주소 등록
 			       	   SimpleDriverDataSource 객체 등록
 			       	   의존 객체 주입 설정
 			       	   DAO 객체 등록
 
-   - web.xml		   	→ DispatchrServlet 객체 등록
+   - web.xml		   	→ DispatchrServlet 객체 등록 - 앞에서 했음
 			           URL 매핑 주소 등록
 
 ○ 사용자 최초 요청 주소

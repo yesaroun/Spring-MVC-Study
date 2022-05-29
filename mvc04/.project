@@ -3,6 +3,20 @@
 	<name>mvc04</name>
 	<comment></comment>
 	<projects>
+		<project>org.springframework.expression-3.0.2.RELEASE</project>
+		<project>org.springframework.beans-3.0.2.RELEASE</project>
+		<project>standard</project>
+		<project>org.springframework.jdbc-3.0.2.RELEASE</project>
+		<project>org.springframework.transaction-3.0.2.RELEASE</project>
+		<project>ojdbc6</project>
+		<project>org.springframework.core-3.0.2.RELEASE</project>
+		<project>org.springframework.aop-3.0.2.RELEASE</project>
+		<project>com.springsource.org.apache.commons.logging-1.1.1</project>
+		<project>org.springframework.asm-3.0.2.RELEASE</project>
+		<project>org.springframework.context-3.0.2.RELEASE</project>
+		<project>jstl</project>
+		<project>org.springframework.web-3.0.2.RELEASE</project>
+		<project>org.springframework.web.servlet-3.0.2.RELEASE</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
