@@ -36,7 +36,8 @@
 		<div>
 			<form action="">
 				<input type="button" value="직원 추가" class="btn"
-				onclick="location.href='EmployeeInsertForm.jsp'" />
+				onclick="location.href='employeeinsertform.action'" />
+				<!-- onclick="location.href='EmployeeInsertForm.jsp'" /> -->
 			</form>
 		</div>
 		<br /><br />
