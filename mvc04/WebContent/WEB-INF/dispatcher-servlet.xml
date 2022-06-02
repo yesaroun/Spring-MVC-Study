@@ -35,11 +35,22 @@
 	<bean id="employeeDAO" class="com.test.mvc.EmployeeDAO">
 		<property name="dataSource" ref="localDataSource"></property>
 	</bean>
+	<bean id="regionDAO" class="com.test.mvc.RegionDAO">
+		<property name="dataSource" ref="localDataSource"></property>
+	</bean>
+	<bean id="departmentDAO" class="com.test.mvc.DepartmentDAO">
+		<property name="dataSource" ref="localDataSource"></property>
+	</bean>
+	<bean id="positionDAO" class="com.test.mvc.PositionDAO">
+		<property name="dataSource" ref="localDataSource"></property>
+	</bean>
+	
 	
 	<!-- AJAX 관련 Controller 등록-->
 	<bean name="/ajax.action" class="com.test.mvc.AjaxController">
 		<property name="dao" ref="employeeDAO"></property>
 	</bean>
+	
 	
 	<!-- Employee 관련 Controller 등록 -->
 	<bean name="/employeelist.action" class="com.test.mvc.EmployeeListController">
@@ -53,4 +64,33 @@
 	<bean name="/employeeinsert.action" class="com.test.mvc.EmployeeInsertController">
 		<property name="dao" ref="employeeDAO"></property>
 	</bean>
+	
+	<bean name="/employeeupdateform.action" class="com.test.mvc.EmployeeUpdateFormController">
+		<property name="employeeDAO" ref="employeeDAO"></property>  <!-- (네임이 의미하는 것은 속성을 의미하고 뒤는 위에 id를 의미 그래서 각각의 bean 속성 위에 지정해야 함) -->
+		<property name="regionDAO" ref="regionDAO"></property>
+		<property name="departmentDAO" ref="departmentDAO"></property>
+		<property name="positionDAO" ref="positionDAO"></property>
+	</bean>
+	
+	<bean name="/employeeupdate.action" class="com.test.mvc.EmployeeUpdateController">
+		<property name="dao" ref="employeeDAO"></property>
+	</bean>
+	
+	<bean name="/employeedelete.action" class="com.test.mvc.EmployeeDeleteController">
+		<property name="dao" ref="employeeDAO"></property>
+	</bean>
+	
+	<bean name="/emplist.action" class="com.test.mvc.EmpListController">
+		<property name="dao" ref="employeeDAO"></property>
+	</bean>
+	
+	<!-- Login 및 Logout 관련 Controller 등록 -->
+	<bean name="/loginform.action" class="com.test.mvc.LoginFormController"></bean>
+	
+	<bean name="/login.action" class="com.test.mvc.LoginController">
+		<property name="dao" ref="employeeDAO"></property> 
+	</bean>
+	
+	<bean name="/logout.action" class="com.test.mvc.LogoutController"></bean>
+	
 </beans>

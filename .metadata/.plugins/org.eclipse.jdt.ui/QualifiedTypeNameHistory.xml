@@ -9,15 +9,17 @@
 <fullyQualifiedTypeName name="org.springframework.jdbc.support.xml.SqlXmlFeatureNotImplementedException"/>
 <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
-<fullyQualifiedTypeName name="com.test.mvc.IEmployeeDAO"/>
-<fullyQualifiedTypeName name="com.test.mvc.Region"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
-<fullyQualifiedTypeName name="com.test.mvc.Department"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="com.test.mvc.Position"/>
-<fullyQualifiedTypeName name="com.test.mvc.Employee"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="com.test.mvc.Region"/>
+<fullyQualifiedTypeName name="com.test.mvc.Department"/>
+<fullyQualifiedTypeName name="com.test.mvc.Position"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="oracle.net.aso.i"/>
+<fullyQualifiedTypeName name="com.test.mvc.IEmployeeDAO"/>
+<fullyQualifiedTypeName name="com.test.mvc.Employee"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 </qualifiedTypeNameHistroy>

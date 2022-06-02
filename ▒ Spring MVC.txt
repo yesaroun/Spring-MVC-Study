@@ -340,7 +340,20 @@ http://localhost:8090/mvc03/memberlist.do
    - AjaxController.java
 	(ajax.action)
 
+   - Ajax.jsp			→ AJAX 객체 구성 페이지.
 
+   - EmployeeUpdateForm.jsp	→ 직원데이터 수정 폼 페이지.
+				   AJAX, jQuery 기능 포함.
+
+   - EmployeeUpdateFormController.java
+     (employeeupdateform.action)
+
+   - EmployeeUpdateController.java
+	(employeeupdate.action)
+
+   - LoginFormController.java
+   - LoginController.java
+   - LogoutController.java
 
 
 
@@ -429,9 +442,7 @@ http://localhost:8090/mvc03/memberlist.do
    - PositionUpdateController.java
    - PositionDeleteController.java
 
-   - LoginFormController.java
-   - LoginController.java
-   - LogoutController.java
+
 
    - EmpListController.java
 	

@@ -27,7 +27,7 @@
 		// test
 		//alert("확인");
 		
-		// jQuery-UI 캘린더를 불러오는 함수 처리(datepicher())
+		// jQuery-UI 캘린더를 불러오는 함수 처리(datepicker())
 		$("#birthday").datepicker(
 		{
 			dateFormat: "yy-mm-dd" // 제이슨 방식으로 속성값을 바꿔주기

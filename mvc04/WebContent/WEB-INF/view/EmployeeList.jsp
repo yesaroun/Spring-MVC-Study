@@ -11,6 +11,40 @@
 <meta charset="UTF-8">
 <title>EmployeeList.jsp</title>
 <link rel="stylesheet" type="text/css" href="<%=cp %>/css/main.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(function()
+	{
+		// 테스트
+		//alert("확인");
+		
+		// 수정 버튼 클릭시 확인
+		$(".updateBtn").click(function()
+		{
+			//테스트
+			//alert("수정 확인");
+			
+			$(location).attr("href", "employeeupdateform.action?employeeId=" + $(this).val());
+		});
+		
+		
+		// 삭제 버튼 클릭 시 액션 처리
+		$(".deleteBtn").click(function()
+		{
+			//테스트
+			//alert("삭제 확인");
+			if (confirm("현재 선택한 데이터를 정말 삭제하시겠습니까?"))
+			{
+	        	 $(location).attr("href", "employeedelete.action?employeeId=" + $(this).val());
+	         }
+			
+		});
+	});
+
+</script>
+
 </head>
 <body>
 
@@ -30,7 +64,7 @@
 	
 	<!-- 콘텐츠 영역 -->
 	<div id="content">
-		<h1>[ 직원 관리 ]</h1>
+		<h1>[ 직원 관리(관리자 전용) ]</h1>
 		<hr>
 		
 		<div>
@@ -67,61 +101,7 @@
 				<th>수정</th>
 				<th>삭제</th>
 			</tr>
-			<!-- 
-			<tr>
-				<td>1</td>
-				<td>김상기</td>
-				<td>620527</td>
-				<td>1962-25-27</td>
-				<td>양력</td>
-				<td>010-9876-5432</td>
-				<td>서울</td>
-				<td>개발부</td>
-				<td>사원</td>
-				<td>1,500,000</td>
-				<td>1,500,000</td>
-				<td>3,000,000</td>
-				<td>관리자</td>
-				<td><button type="button" class="btn">수정</button></td>
-				<td><button type="button" class="btn">삭제</button></td>
-			</tr>
 			
-			<tr>
-				<td>2</td>
-				<td>이상기</td>
-				<td>620527</td>
-				<td>1962-25-27</td>
-				<td>양력</td>
-				<td>010-9876-5432</td>
-				<td>서울</td>
-				<td>개발부</td>
-				<td>사원</td>
-				<td>1,500,000</td>
-				<td>1,500,000</td>
-				<td>3,000,000</td>
-				<td>관리자</td>
-				<td><button type="button" class="btn">수정</button></td>
-				<td><button type="button" class="btn">삭제</button></td>
-			</tr>
-			
-			<tr>
-				<td>3</td>
-				<td>박상기</td>
-				<td>620527</td>
-				<td>1962-25-27</td>
-				<td>양력</td>
-				<td>010-9876-5432</td>
-				<td>서울</td>
-				<td>개발부</td>
-				<td>사원</td>
-				<td>1,500,000</td>
-				<td>1,500,000</td>
-				<td>3,000,000</td>
-				<td>관리자</td>
-				<td><button type="button" class="btn">수정</button></td>
-				<td><button type="button" class="btn">삭제</button></td>
-			</tr>
-			-->
 			
 			<c:forEach var="employee" items="${employeeList }">
 			<tr>
@@ -152,8 +132,14 @@
 				 groupingUsed="true"></fmt:formatNumber></td>
 				
 				<td>${employee.grade==0 ? "관리자" : "일반사원" }</td>
-				<td><button type="button" class="btn updateBtn">수정</button></td>
-				<td><button type="button" class="btn deleteBtn">삭제</button></td>
+				<td>
+					<button type="button" class="btn updateBtn" 
+					value="${employee.employeeId }">수정</button>
+				</td>
+				<td>
+					<button type="button" class="btn deleteBtn"
+					value="${employee.employeeId }">삭제</button>
+				</td>
 			</tr>
 			</c:forEach>
 			
