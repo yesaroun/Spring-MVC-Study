@@ -9,7 +9,34 @@
 <head>
 <meta charset="UTF-8">
 <title>RegionInsertForm.jsp</title>
-<link rel="stylesheet" type="text/css" href="<%=cp %>css/main.css">
+<link rel="stylesheet" type="text/css" href="<%=cp%>/css/main.css">
+<link rel="stylesheet" type="text/css" href="<%=cp%>/css/jquery-ui.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="<%=cp%>/js/jquery-ui.js"></script>
+
+<script type="text/javascript">
+	
+	$(function()
+	{
+		// 지역 추가 버튼 클릭 시
+		$("#submitBtn").click(function()
+		{
+			// 데이터 검사(공란이 있는지 없는지에 대한 여부 확인)
+			if( $("#regionName").val()=="" )
+			{
+				$("#err").html("필수 입력 항목이 누락되었습니다.");
+				$("#err").css("display", "inline");
+				return; //-- submit 액션 중단
+			}
+	
+			// 폼 submit 액션 처리 수행
+			$("#regionForm").submit();
+		});
+	});
+		
+	
+	
+</script>
 </head>
 <body>
 
@@ -32,21 +59,18 @@
 				<tr>
 					<th>지역</th>
 					<td>
-						<input type="text" id="name" name="name" placeholder="지역"/>
+						<input type="text" id="regionName" name="regionName" placeholder="지역"/>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center">
+					<br /><br />
 					
 					<button type="button" class="btn" id="submitBtn"
 					 style="width: 40%;">지역 추가</button>
 					<button type="button" class="btn" id="listBtn"
 					style="width: 50%;"
-					
-					
-					
-					onclick="">지역리스트</button>
-					<!-- 추가하기!! -->
+					onclick="location.href='regionlist.action'">지역리스트</button>
 					<br /><br />
 					
 					<span id="err"

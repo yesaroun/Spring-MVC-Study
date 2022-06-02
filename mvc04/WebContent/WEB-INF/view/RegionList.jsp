@@ -10,6 +10,27 @@
 <meta charset="UTF-8">
 <title>RegionList.jsp</title>
 <link rel="stylesheet" type="text/css" href="<%=cp %>/css/main.css">
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+
+	$(function()
+	{
+		$(".updateBtn").click(function()
+		{
+			$(location).attr("href", "regionupdateform.action?regionId=" + $(this).val());
+		});
+		
+		$(".deleteBtn").click(function()
+		{
+			if(confirm("현재 선택한 데이터를 삭제하시겠습니까?"))
+			{
+				$(location).attr("href", "regiondelete.action?regionId=" + $(this).val());
+			}
+		});
+	});
+
+</script>
 </head>
 <body>
 
@@ -28,14 +49,9 @@
 		<hr />
 		
 		<div>
-	
-	
-	
-	
-			<!-- 여기 추가하기!!!! -->
-			<form action="">
+			<form action="/regioninsertform.action">
 				<input type="button" value="지역 추가"
-				onclick="" />
+				onclick="location.href='regioninsertform.action'" />
 			</form>
 		</div>
 		
