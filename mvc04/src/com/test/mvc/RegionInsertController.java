@@ -27,6 +27,7 @@ public class RegionInsertController implements Controller
 	{
 		ModelAndView mav = new ModelAndView();
 		
+		
 		HttpSession session = request.getSession();
 		
 		if(session.getAttribute("name")==null) 
@@ -40,7 +41,7 @@ public class RegionInsertController implements Controller
 			return mav;
 		}
 		
-		//세션 처리과정 추가
+		// 데이터 수신
 		String regionName = request.getParameter("regionName");
 		
 		try

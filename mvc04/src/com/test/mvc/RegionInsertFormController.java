@@ -29,14 +29,14 @@ public class RegionInsertFormController implements Controller
 	   
 		HttpSession session = request.getSession();
 	
-		if(session.getAttribute("name")==null) //-- 로그인x
+		if(session.getAttribute("name")==null) 
 		{
 			mav.setViewName("redirect:loginform.action");
 			return mav;
 		}
-		else if(session.getAttribute("admin")==null)	 //-- 일반 사원.
+		else if(session.getAttribute("admin")==null)	 
 		{
-			mav.setViewName("redirect:logout.action");	// 기존의 로그인을 풀어주는 것
+			mav.setViewName("redirect:logout.action");	
 			return mav;
 		}
 	
@@ -47,10 +47,7 @@ public class RegionInsertFormController implements Controller
 			regionList = dao.list();
 
 			mav.addObject("regionList", regionList);
-
-         
 			mav.setViewName("WEB-INF/view/RegionInsertForm.jsp");
-
          
 		} 
 		catch (Exception e)

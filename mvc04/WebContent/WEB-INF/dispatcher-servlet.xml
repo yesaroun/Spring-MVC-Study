@@ -120,6 +120,11 @@
 
 	<bean name="/reglist.action" class="com.test.mvc.RegListController">
 		<property name="dao" ref="regionDAO"></property>
-	</bean>	
+	</bean>
+	
+	<!-- Department 관련 Controller 등록 -->
+	<bean name="/departmentlist.action" class="com.test.mvc.DepartmentListController">
+		<property name="dao" ref="departmentDAO"></property>
+	</bean>
 	
 </beans>

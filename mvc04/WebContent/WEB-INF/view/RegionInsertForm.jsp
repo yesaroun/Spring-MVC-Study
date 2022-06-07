@@ -18,18 +18,15 @@
 	
 	$(function()
 	{
-		// 지역 추가 버튼 클릭 시
 		$("#submitBtn").click(function()
 		{
-			// 데이터 검사(공란이 있는지 없는지에 대한 여부 확인)
 			if( $("#regionName").val()=="" )
 			{
 				$("#err").html("필수 입력 항목이 누락되었습니다.");
 				$("#err").css("display", "inline");
-				return; //-- submit 액션 중단
+				return; 
 			}
 	
-			// 폼 submit 액션 처리 수행
 			$("#regionForm").submit();
 		});
 	});
@@ -73,8 +70,7 @@
 					onclick="location.href='regionlist.action'">지역리스트</button>
 					<br /><br />
 					
-					<span id="err"
-					style="color: red; font-weight: bold; display: none;"></span>
+					<span id="err" style="color: red; font-weight: bold; display: none;"></span>
 					</td>
 				</tr>
 			</table>

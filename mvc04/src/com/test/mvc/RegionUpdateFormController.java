@@ -24,8 +24,8 @@ public class RegionUpdateFormController implements Controller
 	{
 		ModelAndView mav = new ModelAndView();
 		
-		HttpSession session = request.getSession();
 		
+		HttpSession session = request.getSession();
 		if(session.getAttribute("name")==null) 
 		{
 			mav.setViewName("redirect:loginform.action");
@@ -37,8 +37,7 @@ public class RegionUpdateFormController implements Controller
 			return mav;
 		}
 		
-		// 세션 처리과정 추가
-		// 관리자
+		
 		try
 		{
 			String regionId = request.getParameter("regionId");

@@ -26,12 +26,12 @@ public class RegListController implements Controller
 		ModelAndView mav = new ModelAndView();
 		
 		HttpSession session = request.getSession();
-		
 		if(session.getAttribute("name")==null)
 		{
 			mav.setViewName("redirect:loginform.action");
 			return mav;
 		}
+
 		
 		ArrayList<Region> regionList = new ArrayList<Region>();
 
