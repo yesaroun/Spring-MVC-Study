@@ -3,22 +3,22 @@
 	<item key="J2EE_EXPORT_OVERWRITE" value="false"/>
 	<item key="J2EE_EXPORT_SOURCE" value="true"/>
 	<list key="J2EE_IMPORT_null">
+		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-06-09\mvc06.war"/>
 		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-06-03\mvc04.war"/>
 		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-05-31\mvc04.war"/>
 		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-05-27\talkdrive\mvc04.war"/>
 		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-05-25\talkdrive (1)\mvc03.war"/>
 		<item value="C:\SpringMVCStudy\talkdrive\mvc01.war"/>
-		<item value="C:\SpringMVCStudy\talkdrive\mvc00.war"/>
 	</list>
 	<list key="MRU_RUNTIME_STORE">
 		<item value="Apache Tomcat v8.5"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-06-09\mybatisWork02.war"/>
+		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-06-09\mybatisWork01.war"/>
+		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-06-09\mybatisWork00.war"/>
 		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-06-07\mvc06.war"/>
 		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-06-07\mvc05.war"/>
 		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-06-02\mvc04.war"/>
-		<item value="C:\Users\akor1\OneDrive\바탕 화면\mvc04.war"/>
-		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-05-30\mvc04.war"/>
-		<item value="C:\Users\akor1\OneDrive\바탕 화면\2022-05-26\mvc04.war"/>
 	</list>
 </section>
