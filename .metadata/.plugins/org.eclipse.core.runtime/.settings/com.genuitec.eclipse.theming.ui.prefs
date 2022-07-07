@@ -1,11 +1,11 @@
 applyBackground=false
 approved.defs.file.last.changed.time=1649720987000
-configurationInstallLocation=/C\:/eclipse/
+configurationInstallLocation=/C\:/Downloads/08_Eclipse/eclipse/
 eclipse.preferences.version=1
-iconcolormode=primary
-iconreplacement=false
+iconcolormode=pastel
+iconreplacement=true
 includeThemingInOomph=false
-last.download.attempt.time=1655078335170
-lastConfiguration=1655135014260
+last.download.attempt.time=1657215357217
+lastConfiguration=1657215332871
 newinstall=true
-workbench.theme=Light Gray
+workbench.theme=Deep Black
