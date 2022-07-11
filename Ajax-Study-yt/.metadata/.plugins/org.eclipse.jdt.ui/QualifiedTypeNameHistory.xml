@@ -8,8 +8,8 @@
 <fullyQualifiedTypeName name="javax.jws.soap.SOAPBinding.Use"/>
 <fullyQualifiedTypeName name="user.User"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
-<fullyQualifiedTypeName name="user.UserDAO"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="user.UserDAO"/>
 </qualifiedTypeNameHistroy>
